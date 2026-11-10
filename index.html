@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt - BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,12 @@
 <body class="bg-pink-300">
 
 
-    <header class="flex flex-row items-center p-2 bg-fuchsia-950 justify-between h-32 relative z-10">
+    <header class="flex flex-row items-center p-2 bg-fuchsia-950 justify-between h-32 relative z-50">
         <img src="imagens/logo.png"  alt="logo da empresa" class="w-35 sm:w-3xs">
-        <button  id="menu-btn" class="md:hidden size-1/4 text-white text-2xl" >&#9776</button>
+        <button type="button" id="menu-btn" class="md:hidden size-1/4 text-white text-2xl z-50 " >&#9776</button>
         
-        <nav id="menu" class="hidden absolute top-full left-0 w-full flex flex-col shadow-lg bg-fuchsia-950 md:flex md:flex-row text-white md:gap-5 md:w-auto md:bg-transparent md:static md:bg-transparent md:shadow-none ">
+        <nav id="menu" class="hidden absolute top-full left-0 w-full flex flex-col shadow-lg bg-fuchsia-950 md:flex md:flex-row text-white md:gap-5 md:w-auto md:bg-transparent md:static md:shadow-none z-40 ">
+
             <a href="#produtos" class="bg-fuchsia-950 hover:bg-purple p-2 rounded-md h-1/2">Produtos</a>
             <a href="#avaliacoes" class="bg-fuchsia-950 hover:bg-purple p-2 rounded-md h-1/2">Avaliações</a>
             <a href="#contatos" class="bg-fuchsia-950 hover:bg-purple p-2 rounded-md h-1/2">Fale conosco</a>
@@ -31,18 +32,18 @@
 
 
     <section>
-        <!-- imagem -->
-        <div class="bg-[url(imagens/cestogato.jpg)] h-screen w-full bg-cover bg-center relative">
+        <!-- imagem HERO -->
+        <div class="bg-[url(imagens/cestogato.jpg)] h-screen w-full bg-cover bg-center relative z-0">
             <!-- camada de cor por cima -->
             <div class=" absolute inset-0 bg-pink-500/30"></div>
         
 
             <div class="relative z-10 text-white p-8 flex flex-col items-center justify-center h-full">
-                <h2 class="text-4xl font-bold ">Amor, conforto e estilo para o seu pet.</h2>
-                <p class="text-verdeclaro font-bold self-end md:self-center bg-roxoescuro p-3 m-3 rounded-xl">o mundo pet com mais estilos</p>
+                <h1 class="text-4xl font-bold ">Amor, conforto e estilo para o seu pet.</h1>
+                <p class="text-verdeclaro font-bold self-end md:self-center bg-roxoescuro p-3 m-3 rounded-xl">O mundo pet com mais estilos</p>
 
                 <a href="#produtos"
-                    class="p-3 rounded-full bg-roxoescuro border-yellow-800 hover:bg-purple cursor-pointer">
+                    class="p-3 rounded-full bg-roxoescuro hover:bg-purple cursor-pointer">
                     Descobrir Produtos &rarr;
                 </a>
             </div>
@@ -56,42 +57,42 @@
          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-3 ">
 
             <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                <img src="imagens/coleiras.jpeg" alt="coleiraspet" class="w-full object-cover">
+                <img src="imagens/coleiras.jpeg" alt="Coleiras para pets" class="w-full object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-bold text-roxoescuro">Coleiras estilosas</h3>
-                    <p class="text-black">conforto e estilo para passeios.</p>
-                    <p class="font-bold mt-2 text-green">R$150,00</p>
+                    <p class="text-black">Conforto e estilo para passeios.</p>
+                    <p class="font-bold mt-2 text-green">R$ 150,00</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                <img src="imagens/roupinha.jpeg" alt="roupapet">
+                <img src="imagens/roupinha.jpeg" alt="Roupa para pets" class="w-full object-cover">
 
                 <div class="p-4">
-                    <h3 class="text-xl font-bold text-roxoescuro">Acessorios Diversos </h3>
+                    <h3 class="text-xl font-bold text-roxoescuro">Acessórios para Pets</h3>
                     <p class="text-black">Estilo para passeios.</p>
-                    <p class="font-bold mt-2 text-green"> Apartir de R$100,00</p>
+                    <p class="font-bold mt-2 text-green"> A partir de R$ 100,00</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                <img src="imagens/comedouros.jpeg" alt="comedourosspet">
+                <img src="imagens/comedouros.jpeg" alt="Comedouros para pets" class="w-full object-cover">
 
                 <div class="p-4">
                     <h3 class="text-xl font-bold text-roxoescuro">Comedouros de ração </h3>
                     <p class="text-black">Tamanhos diversos.</p>
-                    <p class="font-bold mt-2 text-green">R$100,00</p>
+                    <p class="font-bold mt-2 text-green">R$ 100,00</p>
                 </div>
             </div>
 
 
             <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                <img src="imagens/cama.jpeg" alt="coleiraspet">
+                <img src="imagens/cama.jpeg" alt="Camas para pets" class="w-full object-cover">
 
                     <div class="p-4">
                     <h3 class="text-xl font-bold text-roxoescuro">Camas</h3>
                     <p class="text-black">Aconchegantes</p>
-                    <p class="font-bold mt-2 text-green">R$300,00</p>
+                    <p class="font-bold mt-2 text-green">R$ 300,00</p>
                 </div>
             </div>
         </div>
@@ -102,26 +103,25 @@
         <div class="p-5 rounded-xl bg-white text-center shadow-md mt-2">
             <p class="text-yellow-500 mt-2">★★★★★</p>
             <p>"Amei os produtos! Meu pet adorou a caminha."</p>
-            <p class="font-bold mt-3">-Maria S.</p>
+            <p class="font-bold mt-3">Maria S.</p>
             
         </div>
 
         <div class="p-5 rounded-xl bg-white text-center shadow-md mt-2">
             <p class="text-yellow-500 mt-2">★★★★★</p>
-            <p>"Minha gata ficou linda com acessorios."</p>
-            <p class="font-bold mt-3">-Sergio S.</p>
+            <p>"Minha gata ficou linda com acessórios."</p>
+            <p class="font-bold mt-3">Sergio S.</p>
             
         </div>
         <div class="p-5 rounded-xl bg-white text-center shadow-md mt-2">
             <p class="text-yellow-500 mt-2">★★★★</p>
             <p>"Cada coleira mais linda que a outra."</p>
-            <p class="font-bold mt-3">-Clara M.</p>
+            <p class="font-bold mt-3">Clara M.</p>
             
         </div>
     </section>
 
     <section id="contatos" class="p-8">
-
         <h2 class="text-2xl font-bold text-center mb-3">
             Fale conosco
         </h2>
@@ -130,12 +130,13 @@
             Tem alguma dúvida? Estamos aqui para ajudar!
         </p>
 
-        <section class="relative">
+        <div class="relative">
             <form  id="formulario" class="bg-white p-6 rounded-xl shadow-md max-w-xl mx-auto">
                 <div class="mb-4 ">
                     <label for="nome" class="block mb-2">Nome</label>
                     <input
                         type="text"
+                        name="nome"
                         id="nome"
                         placeholder="Digite seu nome"
                         class="w-full border border-gray-300 rounded-md p-3"
@@ -147,15 +148,17 @@
                     <input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="Digite seu e-mail"
                         class="w-full border border-gray-300 rounded-md p-3"
                         required
                     >
                 </div>
                 <div class="mb-4">
-                    <label for="mensagem" class="block mb-2">Mensagem</label>
+                    <label for="msg" class="block mb-2">Mensagem</label>
                     <textarea
                         id="msg"
+                        name="mensagem"
                         placeholder="Escreva sua mensagem"
                         rows="4"
                         class="w-full border border-gray-300 rounded-md p-3"
@@ -176,10 +179,10 @@
                 contato@petstyle.com
             </a>
 
-            <a href="tel:+551199999999" class="block text-balance text-center underline font-bold mt-2 ">
-                (11) 99999-9999
+            <a href="tel:+5511999999999" class="block text-balance text-center underline font-bold mt-2 ">
+                (+55) 11 99999-9999
             </a>
-        </section>
+        </div>
     </section>
 <script src="script.js"></script>
 </body>
